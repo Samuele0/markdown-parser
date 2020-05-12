@@ -4,12 +4,12 @@ Feature: State Manager
     Scenario: Root state request
         Given A State Manager Instance
         When The root state is requested
-        Then an instance of ParsingState should be returned
+        Then any ParsingState should be returned
 
     Scenario: Line State request
         Given A State Manager Instance
         When the "line_start" state is requested
-        Then an instance of LineStartState should be returned
+        Then an instance of NewLineState should be returned
 
     Scenario: Header State request
         Given A State Manager Instance
